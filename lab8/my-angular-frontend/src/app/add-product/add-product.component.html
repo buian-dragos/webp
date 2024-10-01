@@ -1,0 +1,36 @@
+<div class="home-button">
+    <button class="home" type="button" (click)="navigateToHome()">HOME</button>
+  </div>
+  
+  <section class="add_form">
+    <form (ngSubmit)="addProduct()">
+      <input id="id" type="text" [(ngModel)]="product.id" name="id" placeholder="ID" required>
+      <input id="name" type="text" [(ngModel)]="product.name" name="name" placeholder="Name" required>
+      <input id="price" type="text" [(ngModel)]="product.price" name="price" placeholder="Price" required>
+      <input id="category" type="text" [(ngModel)]="product.category" name="category" placeholder="Category" required>
+      <input id="add" type="submit" value="Add new product">
+    </form>
+  </section>
+  
+  <section class="display_add">
+    <br>
+    <table class="display-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products">
+          <td>{{ product.id }}</td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.price }}</td>
+          <td>{{ product.category }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  

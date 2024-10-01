@@ -1,0 +1,17 @@
+/* Example styles, customize as needed */
+.browse-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .browse-table th, .browse-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .pagination a {
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  

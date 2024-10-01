@@ -1,0 +1,38 @@
+<div class="home-button">
+    <button class="home" type="button" (click)="navigateToHome()">HOME</button>
+  </div>
+  
+  <div class="browse-container">
+    <h1>Products</h1>
+    <div class="filter-container">
+      <select id="select-category" [(ngModel)]="selectedCategory" (change)="onCategoryChange()">
+        <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+      </select>
+    </div>
+    <br /><br />
+    <table id="browse-table" class="browse-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Category</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="browse-tbody">
+        <tr *ngFor="let product of products">
+          <td>{{ product.id }}</td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.price }}</td>
+          <td>{{ product.category }}</td>
+          <td><button (click)="addToCart(product.id)">Add to Cart</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagination">
+      <a *ngIf="currentPage > 1" (click)="loadPage(currentPage - 1, $event)" href="#">Previous</a>
+      <a *ngIf="currentPage < totalPages" (click)="loadPage(currentPage + 1, $event)" href="#">Next</a>
+    </div>
+  </div>
+  

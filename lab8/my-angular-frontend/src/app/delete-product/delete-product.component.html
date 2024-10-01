@@ -1,0 +1,30 @@
+<div class="home-button">
+    <button class="home" type="button" (click)="navigateToHome()">HOME</button>
+  </div>
+  
+  <section class="display_delete">
+    <br>
+    <table class="display-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Category</th>
+          <th> </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products">
+          <td>{{ product.id }}</td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.price }}</td>
+          <td>{{ product.category }}</td>
+          <td>
+            <button class="btnDelete" (click)="deleteProduct(product.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  

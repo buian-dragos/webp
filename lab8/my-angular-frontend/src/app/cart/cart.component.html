@@ -1,0 +1,33 @@
+<div class="home-button">
+    <button class="home" type="button" (click)="navigateToHome()">HOME</button>
+  </div>
+  
+  <div class="cart-container">
+    <h1>Cart</h1>
+    <br /><br />
+    <table id="cart-table" class="browse-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Category</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products">
+          <td>{{ product.id }}</td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.price }}</td>
+          <td>{{ product.category }}</td>
+          <td><button (click)="removeFromCart(product.id)">Remove from Cart</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="pagination">
+      <a *ngIf="currentPage > 1" (click)="loadCartPage(currentPage - 1)" href="#">Previous</a>
+      <a *ngIf="currentPage < totalPages" (click)="loadCartPage(currentPage + 1)" href="#">Next</a>
+    </div>
+  </div>
+  
