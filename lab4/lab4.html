@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown Menu</title>
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+        .dropdown-content-right {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            left: 100%;
+            top: 0;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {background-color: #f1f1f1}
+        .show {display: block;}
+    </style>
+</head>
+<body>
+
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+    <div id="myDropdown" class="dropdown-content">
+        <a href="#" onclick="submenuFunction(submenu1)">Submenu 1</a>
+        <div id="submenu1" class="dropdown-content-right">
+            <a href="#">Component 1</a>
+            <a href="#">Component 2</a>
+            <a href="#">Component 3</a>
+        </div>
+        <a href="#" onclick="submenuFunction(submenu2)">Submenu 2</a>
+        <div id="submenu2" class="dropdown-content-right">
+            <a href="#">Component 1</a>
+            <a href="#">Component 2</a>
+            <a href="#">Component 3</a>
+            <a href="#">Component 4</a>
+        </div>
+        <a href="#" onclick="submenuFunction(submenu3)">Submenu 3</a>
+        <div id="submenu3" class="dropdown-content-right">
+            <a href="#">Component 1</a>
+            <a href="#">Component 2</a>
+            <a href="#">Component 3</a>
+            <a href="#">Component 4</a>
+            <a href="#">Component 5</a>
+        </div>
+        <a href="#" onclick="submenuFunction(submenu4)">Submenu 4</a>
+        <div id="submenu4" class="dropdown-content-right">
+            <a href="#">Component 1</a>
+            <a href="#">Component 2</a>
+            <a href="#">Component 3</a>
+        </div>
+        <a href="#" onclick="submenuFunction(submenu5)">Submenu 5</a>
+        <div id="submenu5" class="dropdown-content-right">
+            <a href="#">Component 1</a>
+            <a href="#">Component 2</a>
+            <a href="#">Component 3</a>
+            <a href="#">Component 4</a>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

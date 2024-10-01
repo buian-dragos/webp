@@ -1,0 +1,59 @@
+/* problem8 css */
+.bImage {
+    background-image: url('saverly_logo_final.png');
+    width: 500px;
+    height: 500px;
+    transition: 2s;
+}
+
+.bImage:hover{
+    transform: rotateY(180deg);
+}
+
+/* problem21 css */
+
+.div1{
+    background-color: cyan;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    pointer-events: none; 
+
+}
+
+.div2{
+    background-color: green;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    pointer-events: none; 
+
+}
+
+.div3{
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    pointer-events: none; 
+}
+
+.div4{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    pointer-events: auto;
+}
+
+.div4:hover, .div3:hover, .div2:hover, .div1:hover{
+    background-color: purple;
+}

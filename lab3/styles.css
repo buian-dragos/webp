@@ -1,0 +1,463 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 45px;
+}
+
+.navbar-item {
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #666;
+}
+
+.search-bar {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.search-bar input {
+    width: 95%;
+    padding: 14px 16px;
+    padding-left: 40px; 
+    border-radius: 26px;
+    border: 1px solid #000;
+    font-size: 16px;
+    background: url('search.png') no-repeat 10px center;
+    background-size: 20px 20px;
+}
+
+
+.cart {
+    background: url('cart.png') no-repeat center center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.menu {
+    background: url('lang.png') no-repeat center center;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+.navbar-button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.login {
+    background-color: transparent;
+    color: #666;
+    border: 1px solid black;
+}
+
+.signup {
+    background-color: black;
+    color: white;
+    border-radius: 0;
+}
+
+.navbar::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.gray-fill{
+    background-color: #333;
+}
+.course-section {
+    background-color: #333;
+    color: white;
+    padding: 0;
+  }
+  
+  .course-content-wrapper {
+    background-color: #333;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 50px 60px;
+    margin-bottom: 30px;
+  }
+  
+  .breadcrumbs {
+    font-size: 0.9em; 
+    margin-bottom: 10px;
+    color: #b699ff;
+  }
+  
+  .course-section h1 {
+    font-size: 2em;
+    margin: 20px 0;
+  }
+  
+  .course-section p {
+    font-size: 1.20em; 
+    line-height: 1.2;
+    max-width: 70%; 
+    margin-bottom: 20px;
+  }
+  
+  .course-meta {
+    font-size: 0.95em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .purple-text{
+    font-size: 0.85em;
+    margin-right: 10px;
+    color: #b699ff;
+  }
+  
+  .purple-text2{
+    margin-right: 10px;
+    color: #b699ff;
+  }
+  
+  .stars {
+    color: #ffa600;
+    margin-right: 10px;
+    font-size: 1em;
+  }
+  
+  .ratings,
+  .students {
+    font-size: 0.85em;
+    margin-right: 20px;
+  }
+  
+  .instructor,
+  .update,
+  .language,
+  .subtitles {
+    font-size: 0.85em; 
+    margin-right: 25px;
+    display: inline-block;
+  }
+  
+  .course-info {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+
+  .course-info-item{
+    font-size: 0.85em;
+  }
+  
+  .course-info div:not(:last-child)::after {
+    content: "•";
+    margin: 0 10px;
+    color: #a0a2a8;
+  }
+  
+  @media (min-width: 1200px) {
+    .course-section {
+      max-width: 1200px; 
+      margin: 0 auto; 
+    }
+  }
+  
+  @media (min-width: 1920px) {
+    .course-section {
+      padding-left: 15%; 
+      padding-right: 15%; 
+    }
+  }
+
+.what-youll-learn {
+  border: 1px solid #ddd;
+  padding: 30px; 
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  
+  margin-left: 10%; 
+  margin-right: 40%;
+  margin-top: 20px;
+}
+
+.learn-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+}
+
+.learn-list ul {
+  list-style-type: none; 
+  padding: 0;
+  margin: 0;
+  width: 48%;
+}
+
+.learn-list li {
+  padding-left: 30px;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+.learn-list li:before {
+    content: "✓";
+    padding-right: 5px;
+  }
+
+  .course-preview {
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 20%;
+    top: 110px;
+    margin-left: 64%;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.preview-container {
+  position: relative;
+  text-align: center;
+  padding: 0px;
+  background-image: url('preview.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 340px; 
+  height: 200px; 
+  top: -22px;
+  left: -19px;
+}
+
+
+.play-button {
+    width: 64px;
+    height: 64px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play-button::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 30px solid black;
+  transform: rotate(270deg);
+  margin-left: 10px;
+  position: absolute;
+}
+
+.preview-text {
+    margin-top: 165px;
+    position: absolute;
+    color: #fff;
+    left: 29%;
+}
+
+.pricing-section {
+  font-family: Arial, sans-serif;
+  color: #333;
+  align-items: flex-start;
+}
+
+.price-and-discount {
+  margin-bottom: 10px;
+}
+
+.current-price {
+  font-size: 1.9em;
+  margin-right: 10px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  margin-right: 10px;
+  color: #666;
+}
+
+.discount {
+  color: #000;
+  /* font-size: 1.5em; */
+  border-radius: 2px;
+  padding: 3px 7px;
+}
+
+.time-left {
+  color: red;
+  margin-bottom: 20px;
+  font-size: 0.9em;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+
+.center-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock-icon {
+  margin-right: 5px;
+}
+
+.add-to-cart, .buy-now {
+  width: 90%;
+  padding: 15px 0;
+  margin: 5px auto;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.add-to-cart {
+  background-color: #A435F0;
+  color: white;
+}
+
+.buy-now {
+  background-color: transparent;
+  color: #333;
+  border-color: #000;
+}
+
+.add-to-cart:hover, .buy-now:hover {
+  opacity: 0.9;
+}
+
+.money-back-guarantee {
+  font-size: 0.8em;
+  margin-top: 20px;
+  color: #333;
+}
+
+
+.course-includes ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-includes li {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.coupon-section {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.coupon-applied {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 1px dashed #666;
+  padding: 5px;
+}
+
+.coupon-code {
+  font-size: 0.85em;
+}
+
+.remove-coupon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #7a50b6;
+}
+
+.enter-coupon {
+  display: flex;
+}
+
+.text-row {
+  flex-direction: column;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.action-button {
+  background: none;
+  border: none;
+  padding: 5px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 0.85em;
+  text-decoration: underline;
+  text-decoration-color: #7a50b6;
+  color: #000;
+}
+
+
+.coupon-input {
+  flex-grow: 1;
+  padding: 10px;
+  margin-right: 5px;
+  border: 1px solid #000;
+}
+
+.apply-coupon {
+  padding: 5px 15px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.apply-coupon:hover {
+  opacity: 0.8;
+}
+
+
+  
+  
